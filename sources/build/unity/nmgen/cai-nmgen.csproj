@@ -60,7 +60,10 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
-      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\libs\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\libs\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -73,17 +76,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\nmgen-rcn\cai-nmgen-rcn.vcxproj">
+      <Project>{b783b817-8746-4d54-a6cc-664c0a73186f}</Project>
+      <Name>cai-nmgen-rcn</Name>
+    </ProjectReference>
     <ProjectReference Include="..\util\cai-util.csproj">
       <Project>{C4B32B85-13F0-42b8-AC89-770BEFEAF022}</Project>
       <Name>cai-util</Name>
     </ProjectReference>
-    <ProjectReference Include="..\nmgen-rcn\cai-nmgen-rcn.vcxproj">
-      <Project>{B783B817-8746-4D54-A6CC-664C0A73186F}</Project>
-      <Name>cai-nmgen-rcn</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="UnityEngine.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

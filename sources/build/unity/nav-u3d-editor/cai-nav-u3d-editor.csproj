@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\nav-rcn\cai-nav-rcn.vcxproj">
-      <Project>{319D361B-147F-45AC-854E-50C06FCA3393}</Project>
+      <Project>{319d361b-147f-45ac-854e-50c06fca3393}</Project>
       <Name>cai-nav-rcn</Name>
     </ProjectReference>
     <ProjectReference Include="..\nav-u3d\cai-nav-u3d.csproj">
@@ -89,15 +89,17 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEditor">
-      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+      <HintPath>..\libs\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>D:\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\libs\UnityEngine.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="UnityEditor.dll" />
-    <Content Include="UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\libs\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
